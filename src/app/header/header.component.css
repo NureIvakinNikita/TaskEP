@@ -1,0 +1,25 @@
+nav {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+body {
+    padding-top: 70px;
+
+}

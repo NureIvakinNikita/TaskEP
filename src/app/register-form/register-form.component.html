@@ -1,0 +1,46 @@
+<div class="user-form-container">
+  <h2>User Registration</h2>
+  <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+    <div class="form-group">
+      <label for="full-name">Full Name</label>
+      <input
+        type="text"
+        id="full-name"
+        name="full-name"
+        placeholder="John Doe"
+        [(ngModel)]="user.fullName"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="john.doe@gmail.com"
+        [(ngModel)]="user.email"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="wfersa1_qweD"
+        [(ngModel)]="user.password"
+        required
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+    <p>
+      If you don't have an account, go to
+      <a [routerLink]="'/login'">Login Form</a>.
+    </p>
+  </form>
+</div>
